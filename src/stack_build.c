@@ -6,14 +6,14 @@
 /*   By: julia <julia@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/22 17:20:02 by julia             #+#    #+#             */
-/*   Updated: 2026/02/22 17:20:35 by julia            ###   ########.fr       */
+/*   Updated: 2026/02/22 18:01:19 by julia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
 //1//
-static int has_value(t_stack *a, int value)
+int has_value(t_stack *a, int value)
 {
     t_node *cur;
 
@@ -41,7 +41,7 @@ static t_node *new_node(int value)
 }
 
 //3//
-static void stack_add_back(t_stack *a, int value)
+void stack_add_back(t_stack *a, int value)
 {
     t_node *n;
     t_node *cur;
@@ -60,4 +60,37 @@ static void stack_add_back(t_stack *a, int value)
         cur = cur->next;
     cur->next = n;
     a->size++;
+}
+//4//
+void free_stack(t_stack *s)
+{
+    t_node *cur;
+    t_node *next;
+
+    cur = s->top;
+    while (cur)
+    {
+        next = cur->next;
+        free(cur);
+        cur = next;
+    }
+    s->top = NULL;
+    s->size = 0;
+}
+
+//5//
+int is_sorted(t_stack *a)
+{
+    t_node *cur;
+
+    if (!a || !a->top)
+        return (1);
+    cur = a->top;
+    while (cur->next)
+    {
+        if (cur->value > cur->next->value)
+            return (0);
+        cur = cur->next;
+    }
+    return (1);
 }

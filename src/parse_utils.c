@@ -6,14 +6,14 @@
 /*   By: julia <julia@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/22 17:21:27 by julia             #+#    #+#             */
-/*   Updated: 2026/02/22 17:21:29 by julia            ###   ########.fr       */
+/*   Updated: 2026/02/22 17:50:06 by julia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
 //1//
-static void free_tokens(char **tokens)
+void free_tokens(char **tokens)
 {
     size_t i;
 

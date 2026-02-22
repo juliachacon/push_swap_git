@@ -6,7 +6,7 @@
 /*   By: julia <julia@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 12:40:31 by jchacon-          #+#    #+#             */
-/*   Updated: 2026/02/22 17:39:22 by julia            ###   ########.fr       */
+/*   Updated: 2026/02/22 18:00:46 by julia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,12 +42,11 @@ int     is_in_int_range(const char *s);
 /* Construcción / búsqueda en stack */
 int     has_value(t_stack *a, int value);
 void    stack_add_back(t_stack *a, int value);
-
-/* Liberación */
+int     is_sorted(t_stack *a);
 void    free_stack(t_stack *s);
 
-/* Comprobación */
-int     is_sorted(t_stack *a);
+/* Liberación */
+void    free_tokens(char **tokens);
 
 /* -------- movimientos obligatorios -------- */
 void    sa(t_stack *a);
