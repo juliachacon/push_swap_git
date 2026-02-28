@@ -99,7 +99,9 @@ This is repeated for all necessary bit positions until the stack is fully sorted
 
 Time complexity: O(n log n).
 
-📂 Project Structure
+## 📂 Project Structure
+
+```text
 push_swap/
 │
 ├── includes/
@@ -118,9 +120,10 @@ push_swap/
 │   └── push_swap.c
 │
 ├── libft/
-│   └── (custom standard library functions)
+│   └── (custom standard library)
 │
 └── Makefile
+```
 
 The codebase is modular:
 
