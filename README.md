@@ -1,4 +1,4 @@
-Project Overview
+## Project Overview
 
 This implementation of push_swap is structured in three main stages: (1) input parsing, (2) stack operations, and (3) sorting strategy.
 
@@ -13,7 +13,7 @@ This project goes far beyond implementing a sorting algorithm. It requires under
 Rather than comparing values directly, the solution works at the binary level, progressively organizing elements bit by bit. What initially seems like a restrictive problem becomes an exercise in algorithmic elegance and structural thinking. Despite the stressful moments, I really enjoyed working on this project.
 
 
-1️⃣ Input Parsing & Validation
+## 1️⃣ Input Parsing & Validation
 
 The program validates all input arguments before building the stack:
 
@@ -33,7 +33,7 @@ Valid integers are stored in stack A using a singly linked list.
 
 This ensures that the algorithm always works with safe and consistent data.
 
-2️⃣ Stack Structure & Operations
+## 2️⃣ Stack Structure & Operations
 
 Stacks are implemented as singly linked lists:
 
@@ -67,7 +67,7 @@ Maintains stack size consistency.
 
 Prints instructions only when executed.
 
-3️⃣ Sorting Strategy — Binary Radix Sort
+## 3️⃣ Sorting Strategy — Binary Radix Sort
 
 The chosen strategy is a binary radix sort, adapted to the limited set of allowed stack operations.
 
