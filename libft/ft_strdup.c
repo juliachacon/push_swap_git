@@ -6,7 +6,7 @@
 /*   By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/10 17:15:11 by julia             #+#    #+#             */
-/*   Updated: 2025/05/15 23:41:27 by jchacon-         ###   ########.fr       */
+/*   Updated: 2025/05/16 20:06:56 by jchacon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,6 @@ char	*ft_strdup(const char *s)
 	copia = ft_strdup(s);
 	printf("original: %s\n", s);
 	printf("copia: %s\n", copia);
-	free(copia); // quien llama a la funcion es quien libera la mem
+	free(copia);
 	return (0);
 } */

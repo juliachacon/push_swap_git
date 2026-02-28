@@ -6,7 +6,7 @@
 /*   By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 21:08:14 by jchacon-          #+#    #+#             */
-/*   Updated: 2025/05/14 19:07:40 by jchacon-         ###   ########.fr       */
+/*   Updated: 2025/05/16 19:59:05 by jchacon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,19 +25,19 @@ int	ft_isdigit(int c)
     c = '0';
     if(isdigit(c))
     {
-        printf("%d es un digito", c);
+        printf("%d is digit", c);
     }
     else
     {
-        printf("%d no es un digito", c);
+        printf("%d is not digit", c);
     }
     if(ft_isdigit(c))
     {
-        printf("%d es un digito", c);
+        printf("%d is digit", c);
     }
     else
     {
-        printf("%d no es un digito", c);
+        printf("%d is not digit", c);
     }
     printf("%d", c);
     return(0);

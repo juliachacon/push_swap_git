@@ -6,7 +6,7 @@
 /*   By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/10 17:56:24 by julia             #+#    #+#             */
-/*   Updated: 2025/05/16 00:21:02 by jchacon-         ###   ########.fr       */
+/*   Updated: 2025/05/16 20:05:30 by jchacon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,6 @@ int main(void)
 	copy = ft_substr(s1, start, len);
 	printf("copy %s\n", copy);
 	printf("original %s\n", s1);
-	free(copy); //quien llama a la funcion es quien libera la mem
+	free(copy);
 	return(0);
 } */

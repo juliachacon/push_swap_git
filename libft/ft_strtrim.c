@@ -6,11 +6,25 @@
 /*   By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/11 00:16:58 by julia             #+#    #+#             */
-/*   Updated: 2025/05/15 22:18:44 by jchacon-         ###   ########.fr       */
+/*   Updated: 2025/05/16 21:19:59 by jchacon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+int	is_in_set(char c, const char *set)
+{
+	size_t	i;
+
+	i = 0;
+	while (set[i])
+	{
+		if (c == set[i])
+			return (1);
+		i++;
+	}
+	return (0);
+}
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -40,20 +54,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	trim[i] = '\0';
 	return (trim);
 }
-
-/*int	is_in_set(char c, const char *set)
-{
-	size_t	i;
-
-	i = 0;
-	while (set[i])
-	{
-		if (c == set[i])
-			return (1);
-		i++;
-	}
-	return (0);
-}*/
 
 /*int	main(void)
 {

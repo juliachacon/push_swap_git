@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: julia <julia@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 22:40:13 by jchacon-          #+#    #+#             */
-/*   Updated: 2025/05/15 18:55:44 by jchacon-         ###   ########.fr       */
+/*   Updated: 2026/02/28 16:51:16 by julia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 # include <unistd.h>
 
 size_t	ft_strlen(const char *str);
-int		ft_atoi(char *str);
+int		ft_atoi(const char *str);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_isascii(int c);
@@ -29,7 +29,7 @@ int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
-int		ft_strncmp(char *s1, char *s2, unsigned int n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);

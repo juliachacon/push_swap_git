@@ -6,7 +6,7 @@
 /*   By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 12:40:52 by jchacon-          #+#    #+#             */
-/*   Updated: 2025/05/14 22:01:36 by jchacon-         ###   ########.fr       */
+/*   Updated: 2025/05/16 22:40:19 by jchacon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
 
-	if (!*dst || !*src)
+	if (!dst || !src)
 		return (0);
 	if (size == 0)
 		return (ft_strlen(src));

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julia <julia@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/11 20:11:41 by julia             #+#    #+#             */
-/*   Updated: 2025/05/16 18:28:59 by julia            ###   ########.fr       */
+/*   Updated: 2025/05/16 20:07:40 by jchacon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ void	ft_iniciate_vars(size_t *i, size_t *j)
 	*i = 0;
 	*j = 0;
 }
-
 
 size_t	ft_count_words(char const *s, char c)
 {
@@ -46,7 +45,7 @@ size_t	ft_count_words(char const *s, char c)
 
 void	*ft_free_lst(char **lst, size_t j)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (i < j)
@@ -87,6 +86,7 @@ char	**ft_split(char const *s, char c)
 	return (lst);
 }
 
+/*
 int	main(void)
 {
 	char *s = "julia,mundo,hola";
@@ -99,10 +99,10 @@ int	main(void)
 		return (1); // control si ft_split falla
 	while (resultado[i])
 	{
-		printf("Palabra %d: %s\n", i, resultado[i]);
+		printf("Word%d: %s\n", i, resultado[i]);
 		free(resultado[i]);
 		i++;
 	}
 	free(resultado);
 	return (0);
-}
+} */

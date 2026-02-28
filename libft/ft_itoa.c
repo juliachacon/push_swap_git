@@ -6,7 +6,7 @@
 /*   By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 18:53:38 by jchacon-          #+#    #+#             */
-/*   Updated: 2025/05/15 21:02:47 by jchacon-         ###   ########.fr       */
+/*   Updated: 2025/05/16 19:58:21 by jchacon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ char	*ft_itoa(int n)
 
 	n = -2147483648;
 	str = ft_itoa(n);
-	printf("numero: %s\n", str);
+	printf("number: %s\n", str);
 	free(str);
 	return (0);
 } */

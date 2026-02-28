@@ -6,7 +6,7 @@
 /*   By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/10 22:15:05 by julia             #+#    #+#             */
-/*   Updated: 2025/05/15 22:49:34 by jchacon-         ###   ########.fr       */
+/*   Updated: 2025/05/16 20:06:42 by jchacon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	s1 = "hola";
 	s2 = "mundo";
-	nuevo = ft_strjoin(s1, s2);
-	printf("resultado: %s\n", nuevo);
-	free(nuevo);
+	new = ft_strjoin(s1, s2);
+	printf("result: %s\n", new);
+	free(new);
 	return (0);
 }*/

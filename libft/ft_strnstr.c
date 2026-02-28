@@ -6,7 +6,7 @@
 /*   By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 00:47:58 by julia             #+#    #+#             */
-/*   Updated: 2025/05/15 22:51:03 by jchacon-         ###   ########.fr       */
+/*   Updated: 2025/05/16 20:05:53 by jchacon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,8 +48,8 @@ size_t		len;
 len = 8;
 j = ft_strnstr(haystack, needle, len);
 if (j)
-printf("Encontrado %s\n", j);
+printf("Found %s\n", j);
 else
-printf("No encontrado\n");
+printf("Not found\n");
 return (0);
 }*/

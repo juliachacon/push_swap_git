@@ -6,7 +6,7 @@
 /*   By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 20:33:35 by jchacon-          #+#    #+#             */
-/*   Updated: 2025/05/14 19:53:50 by jchacon-         ###   ########.fr       */
+/*   Updated: 2025/05/16 20:05:04 by jchacon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	ft_bzero(void *s, size_t n)
 	n = 10;
 	ft_bzero(buffer1, n);
 	bzero(buffer2, n);
-	printf("mi funcion: %s\n", buffer1);
-	printf("Funcion original: %s", buffer2);
+	printf("My function: %s\n", buffer1);
+	printf("Original function: %s", buffer2);
 	return (0);
 }*/

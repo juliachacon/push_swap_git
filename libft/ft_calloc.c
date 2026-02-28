@@ -6,7 +6,7 @@
 /*   By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 21:16:25 by julia             #+#    #+#             */
-/*   Updated: 2025/05/15 22:45:47 by jchacon-         ###   ########.fr       */
+/*   Updated: 2025/05/16 21:24:06 by jchacon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,14 +42,14 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	int		*array;
 
 	i = 0;
-	correcto = 1; // hago un boleano
+	correcto = 1; // bol
 	nmemb = 3;
 	size = 4;
 	array = ft_calloc(nmemb, size);
-	// int *arrayc = calloc(nmemb, size); //3 elementos de tipo int (4 bytes)
+	// int *arrayc = calloc(nmemb, size); //3 elements type int (4 bytes)
 	if (array == NULL)
 	{
-		printf("Error al reservar memoria\n");
+		printf("Error\n");
 		return (1);
 	}
 	while (i < nmemb)
@@ -63,9 +63,9 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		i++;
 	}
 	if (correcto)
-		printf("ft_calloc funciona correctamente: todo inicializado a 0\n");
+		printf("ft_calloc works correctly: all set to 0\n");
 	else
-		printf("Error: los valores no están todos a 0\n");
-	free(array); // quien llama a la funcion es quien libera la mem
+		printf("Error: not all values are set to 0\n");
+	free(array);
 	return (0);
 } */

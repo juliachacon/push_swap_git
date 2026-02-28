@@ -6,7 +6,16 @@
 /*   By: julia <julia@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/28 16:33:34 by julia             #+#    #+#             */
-/*   Updated: 2026/02/28 16:33:35 by julia            ###   ########.fr       */
+/*   Updated: 2026/02/28 16:54:03 by julia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "push_swap.h"
+
+void	push_swap(t_stack *a, t_stack *b)
+{
+	(void)b;
+	if (!a || a->size < 2)
+		return;
+	/* radix */
+}

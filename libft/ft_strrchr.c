@@ -6,7 +6,7 @@
 /*   By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 22:27:20 by jchacon-          #+#    #+#             */
-/*   Updated: 2025/05/14 21:54:09 by jchacon-         ###   ########.fr       */
+/*   Updated: 2025/05/16 22:57:22 by jchacon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,20 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
+	const char	*last;
+
+	last = NULL;
 	while (*s)
-		s++;
-	while (s--)
 	{
 		if (*s == (char)c)
-		{
-			return ((char *)s);
-		}
+			last = s;
+		s++;
 	}
-	return (NULL);
+	if ((char)c == '\0')
+	{
+		return ((char *)s);
+	}
+	return ((char *)last);
 }
 
 /*int main(void)

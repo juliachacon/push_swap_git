@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: julia <julia@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 00:05:46 by julia             #+#    #+#             */
-/*   Updated: 2025/05/15 22:15:14 by jchacon-         ###   ########.fr       */
+/*   Updated: 2026/02/28 16:47:12 by julia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(char *str)
+int ft_atoi(const char *str)
 {
 	int	i;
 	int	sign;
@@ -41,7 +41,7 @@ int	ft_atoi(char *str)
 /* int	main(void)
 {
 	char str[] = "--11234abvc11";
-	printf("%d mi atoi\n", ft_atoi(str));
-	printf("%d atoi de c\n", atoi(str));
+	printf("%d my atoi\n", ft_atoi(str));
+	printf("%d original atoi\n", atoi(str));
 	return (0);
 } */

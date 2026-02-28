@@ -6,7 +6,7 @@
 /*   By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 20:24:44 by jchacon-          #+#    #+#             */
-/*   Updated: 2025/05/14 19:08:33 by jchacon-         ###   ########.fr       */
+/*   Updated: 2025/05/16 20:06:15 by jchacon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ size_t	ft_strlen(const char *str)
     char  str[4] = "hola";
     int j;
     j = ft_strlen(str);
-    printf("'%d' es la longitud", j);
+    printf("'%d' is the length", j);
     return(0);
 }*/
