@@ -6,7 +6,7 @@
 /*   By: julia <julia@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 12:40:31 by jchacon-          #+#    #+#             */
-/*   Updated: 2026/02/22 18:00:46 by julia            ###   ########.fr       */
+/*   Updated: 2026/02/28 16:32:25 by julia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ void    sa(t_stack *a);
 void    sb(t_stack *b);
 void    ss(t_stack *a, t_stack *b);
 void    pa(t_stack *a, t_stack *b);
-void    pb(t_stack *b, t_stack *a);
+void    pb(t_stack *a, t_stack *b);
 void    ra(t_stack *a);
 void    rb(t_stack *b);
 void    rr(t_stack *a, t_stack *b);
