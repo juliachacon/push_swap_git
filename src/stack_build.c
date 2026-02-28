@@ -6,7 +6,7 @@
 /*   By: julia <julia@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/22 17:20:02 by julia             #+#    #+#             */
-/*   Updated: 2026/02/22 18:01:19 by julia            ###   ########.fr       */
+/*   Updated: 2026/02/28 16:10:12 by julia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ void stack_add_back(t_stack *a, int value)
     cur->next = n;
     a->size++;
 }
+
 //4//
 void free_stack(t_stack *s)
 {

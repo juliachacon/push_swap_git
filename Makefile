@@ -6,7 +6,7 @@
 #    By: julia <julia@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/21 16:33:56 by julia             #+#    #+#              #
-#    Updated: 2026/02/21 16:34:16 by julia            ###   ########.fr        #
+#    Updated: 2026/02/28 16:13:05 by julia            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,8 +37,9 @@ OBJ_DIR     := obj
 SRCS        := \
 	$(SRC_DIR)/main.c \
 	$(SRC_DIR)/parse_args.c \
-	$(SRC_DIR)/is_sorted.c \
-	$(SRC_DIR)/free.c \
+	$(SRC_DIR)/parse_utils.c \
+	$(SRC_DIR)/parse_validate.c \
+	$(SRC_DIR)/stack_build.c \
 	$(SRC_DIR)/push_swap.c
 
 OBJS        := $(SRCS:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
