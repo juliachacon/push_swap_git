@@ -3,31 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   parse_utils.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julia <julia@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/22 17:21:27 by julia             #+#    #+#             */
-/*   Updated: 2026/02/22 17:50:06 by julia            ###   ########.fr       */
+/*   Updated: 2026/03/02 15:12:34 by jchacon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-//1//
-void free_tokens(char **tokens)
+void	free_tokens(char **tokens)
 {
-    size_t i;
+	size_t	i;
 
-    if (!tokens)
-        return;
-    i = 0;
-    while (tokens[i])
-        free(tokens[i++]);
-    free(tokens);
+	if (!tokens)
+		return ;
+	i = 0;
+	while (tokens[i])
+		free(tokens[i++]);
+	free(tokens);
 }
 
-//2//
-void error_exit(void)
+void	error_exit(void)
 {
-    write(2, "Error\n", 6);
-    exit(1);
+	write(2, "Error\n", 6);
+	exit(1);
 }

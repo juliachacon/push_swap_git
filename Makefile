@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: julia <julia@student.42.fr>                +#+  +:+       +#+         #
+#    By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/21 16:33:56 by julia             #+#    #+#              #
-#    Updated: 2026/03/02 12:12:35 by julia            ###   ########.fr        #
+#    Updated: 2026/03/02 15:41:02 by jchacon-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,6 +45,8 @@ SRCS        := \
 	$(SRC_DIR)/moves_rotate.c \
 	$(SRC_DIR)/moves_rev_rotate.c \
 	$(SRC_DIR)/small_sort.c \
+	$(SRC_DIR)/compress.c \
+	$(SRC_DIR)/radix.c \
 	$(SRC_DIR)/push_swap.c
 
 OBJS        := $(SRCS:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
