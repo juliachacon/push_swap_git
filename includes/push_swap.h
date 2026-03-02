@@ -6,7 +6,7 @@
 /*   By: julia <julia@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 12:40:31 by jchacon-          #+#    #+#             */
-/*   Updated: 2026/02/28 16:32:25 by julia            ###   ########.fr       */
+/*   Updated: 2026/03/02 12:21:27 by julia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,10 @@ void    rr(t_stack *a, t_stack *b);
 void    rra(t_stack *a);
 void    rrb(t_stack *b);
 void    rrr(t_stack *a, t_stack *b);
+
+/* -------- small sorts -------- */
+void	sort_3(t_stack *a);
+void	sort_5(t_stack *a, t_stack *b);
 
 /* -------- algoritmo principal -------- */
 void    push_swap(t_stack *a, t_stack *b);

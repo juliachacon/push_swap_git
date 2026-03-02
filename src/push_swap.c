@@ -6,7 +6,7 @@
 /*   By: julia <julia@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/28 16:33:34 by julia             #+#    #+#             */
-/*   Updated: 2026/03/02 12:08:53 by julia            ###   ########.fr       */
+/*   Updated: 2026/03/02 12:22:29 by julia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -149,13 +149,15 @@ void	push_swap(t_stack *a, t_stack *b)
 	compress_values(a);
 	
 	if (a->size == 2)
+	{
 		if (a->top->value > a->top->next->value)
 			sa(a);
+	}
 	else if (a->size == 3)
 		sort_3(a);
 	else if (a->size <= 5)
 		sort_5(a, b);
 	else
-	radix_sort(a, b);
+		radix_sort(a, b);
 }
 
