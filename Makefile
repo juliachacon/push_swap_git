@@ -6,7 +6,7 @@
 #    By: julia <julia@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/21 16:33:56 by julia             #+#    #+#              #
-#    Updated: 2026/02/28 16:36:31 by julia            ###   ########.fr        #
+#    Updated: 2026/03/02 12:12:35 by julia            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,6 +44,7 @@ SRCS        := \
 	$(SRC_DIR)/moves_push.c \
 	$(SRC_DIR)/moves_rotate.c \
 	$(SRC_DIR)/moves_rev_rotate.c \
+	$(SRC_DIR)/small_sort.c \
 	$(SRC_DIR)/push_swap.c
 
 OBJS        := $(SRCS:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)

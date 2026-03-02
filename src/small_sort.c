@@ -6,7 +6,7 @@
 /*   By: julia <julia@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/02 11:32:16 by julia             #+#    #+#             */
-/*   Updated: 2026/03/02 11:59:33 by julia            ###   ########.fr       */
+/*   Updated: 2026/03/02 12:11:47 by julia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,12 +62,14 @@ static void	bring_value_to_top(t_stack *a, int value)
 {
 	int pos;
 
-	pos = position_of_value(a, value);
 	if (pos < 0)
 		return;
 
 	while (a->top->value != value)
 	{
+        pos = position_of_value(a, value);
+        if (pos < 0)
+		    return;
 		if (pos <= a->size / 2)
 			ra(a);
 		else
