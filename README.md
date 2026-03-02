@@ -8,9 +8,9 @@
   • Small Case Optimization
   • Value Compression
   • Bitwise Sorting
+```
 
 ## 1️⃣ Project Overview
-```
 
 This implementation of push_swap is structured in three main stages: (1) input parsing, (2) stack operations, and (3) sorting strategy.
 
