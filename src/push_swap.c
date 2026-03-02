@@ -6,11 +6,12 @@
 /*   By: julia <julia@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/28 16:33:34 by julia             #+#    #+#             */
-/*   Updated: 2026/02/28 16:58:11 by julia            ###   ########.fr       */
+/*   Updated: 2026/03/02 12:08:53 by julia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
 /* ---------- helpers for compress (value -> index) ---------- */
 
 static int	*stack_to_array(t_stack *a)
@@ -144,7 +145,17 @@ void	push_swap(t_stack *a, t_stack *b)
 		return;
 	if (is_sorted(a))
 		return;
+	
 	compress_values(a);
+	
+	if (a->size == 2)
+		if (a->top->value > a->top->next->value)
+			sa(a);
+	else if (a->size == 3)
+		sort_3(a);
+	else if (a->size <= 5)
+		sort_5(a, b);
+	else
 	radix_sort(a, b);
 }
 
