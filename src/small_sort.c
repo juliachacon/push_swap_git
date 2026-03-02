@@ -6,7 +6,7 @@
 /*   By: jchacon- <jchacon-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/02 11:32:16 by julia             #+#    #+#             */
-/*   Updated: 2026/03/02 15:09:52 by jchacon-         ###   ########.fr       */
+/*   Updated: 2026/03/02 21:18:18 by jchacon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,12 +79,15 @@ static void	bring_value_to_top(t_stack *a, int value)
 
 void	sort_5(t_stack *a, t_stack *b)
 {
-	if (!a || a->size < 4 || a->size > 5)
+	if (!a || a->size < 4 ||  a->size > 5)
 		return ;
 	bring_value_to_top(a, 0);
 	pb(a, b);
-	bring_value_to_top(a, 1);
-	pb(a, b);
+	if (a->size == 4)
+	{
+		bring_value_to_top(a, 1);
+		pb(a, b);
+	}
 	sort_3(a);
 	pa(a, b);
 	pa(a, b);
