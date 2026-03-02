@@ -1,4 +1,5 @@
 
+```text
 1️⃣ Project Overview
 2️⃣ Input Parsing & Validation
 3️⃣ Stack Structure & Operations
@@ -9,6 +10,7 @@
   • Bitwise Sorting
 
 ## 1️⃣ Project Overview
+```
 
 This implementation of push_swap is structured in three main stages: (1) input parsing, (2) stack operations, and (3) sorting strategy.
 
